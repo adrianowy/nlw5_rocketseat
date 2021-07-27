@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #FFFFFF;
+
+    --gray-50: #F7F8FA;
+    --gray-100: #E6E8EB;
+    --gray-200: #AFB2B1;
+    --gray-500: #808080;
+    --gray-800: #494D4B;
+
+    --green-500: #04D361;
+
+    --purple-300: #9F75FF;
+    --purple-400: #9164FA;
+    --purple-500: #8257E5;
+    --purple-800: #6F48C9;
+}
+
+@media(min-width: 1201px){ /* Extra large screens, TV */
+    html{ font-size: 112%; }
+}
+
+@media(max-width: 1024px){ /* Small screens, laptops */
+    html{ font-size: 93.75%; }
+}
+
+@media(max-width: 768px){ /* iPads, Tablets */
+    html{ font-size: 75%; }
+}
+
+@media(max-width: 480px){ /* Mobile devices */
+    html{ font-size: 62.5%; }
+}
+
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+body {
+    background: var(--gray-50);
+}
+
+body, input, textarea, select, button{
+    font: 500 1rem Inter, sans-serif;
+    color: var(--gray-500);
+}
+
+h1, h2, h3, h4 ,h5, h6{
+    font-weight: 600;
+    font-family: Lexend, sans-serif;
+    color: var(--gray-800);
+}
+
+h1{ font-size: 2rem; }
+h2{ font-size: 1.5rem; }
+h3{ font-size: 1rem; }
+h4{ font-size: 0.75rem; }
+h5{ font-size: 0.5rem; }
+h6{ font-size: 0.25rem; }
+
+button{
+    cursor: pointer;
+}
